@@ -58,8 +58,23 @@ function generatePassword(){
     optionsSelectedBox.push(upperCaseList)
    }
 
+  return passwordGenerator(passwordLength, optionsSelectedBox);
 }  
 
+
+
+function passwordGenerator(passwordLength, optionsSelectedBox){
+  var generatedPassword = ""
+  for (var i = 0; i< passwordLength; i++){
+    var randomChar = Math.floor(Math.random()* optionsSelectedBox.length);
+     generatedPassword +=passwordLength[randomChar];
+  }
+  
+
+console.log("Password is " + generatePassword);
+
+return generatePassword; 
+}
 
 
 
