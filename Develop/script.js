@@ -19,7 +19,7 @@ function generatePassword(){
       window.alert("Not a Number selected. Please try again!")
       return
   } else {
-    window.alert("Thank you!")
+    window.alert("Thank you! Click OK to continue")
   }
 
   if(passwordLength < 8 || passwordLength > 128){
@@ -27,8 +27,12 @@ function generatePassword(){
     return
   }
 
-
-
+  
+  
+  var userSelectedNumbers = window.confirm("Include Numbers in your password? Click Ok to confirm or Cancel to ignore") 
+  var userSelectedSymbols = window.confirm("Include Symbols in your password? Click Ok to confirm or Cancel to ignore")
+  var userSelectedLowercase = window.confirm("Include lower case in your password? Click Ok to confirm or Cancel to ignore")  
+  var userSelectedUppercase = window.confirm("Include upper case in your password? Click Ok to confirm or Cancel to ignore") 
 
 }  
 
