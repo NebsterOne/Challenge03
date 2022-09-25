@@ -1,7 +1,7 @@
 # Password Generator Starter Code
 
 ## Live Site
-[Live Site](https://nebsterOne.github.io/challengew03/)
+[Live Site](https://nebsterone.github.io/Challenge03/)
 
 
 ## Wk3 Task
