@@ -8,8 +8,21 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
 
-  window.prompt("Testing prompt method") 
+  console.log("Welcome to Password Generator - probably more safer that Optus security measures") 
+
+
+  var userInput = window.prompt("Enter the length of password")
+
+  var passwordLength = parseInt(userInput)
+
+  if (isNaN(passwordLength)){
+      window.alert("Not a Number selected")
+      return
+  } else {
+    window.alert("Thank you!")
+  }
 }  
+
 
 // Write password to the #password input
 function writePassword() {
